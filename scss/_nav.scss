@@ -1,0 +1,39 @@
+.nav {
+  @media screen and (min-width: $small) {
+    grid-column: 1 / 4;
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__links {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    list-style-type: none;
+    height: 17.1875rem;
+    overflow-y: scroll;
+
+    @media screen and (min-width: $small) {
+      height: unset;
+      overflow-y: unset;
+    }
+  }
+
+  &__link {
+    border-top: 1px solid black;
+    padding: 0.5rem 0.5rem 0.5rem 2.8125rem;
+
+    @media screen and (min-width: $small) {
+      &:first-of-type {
+        border-top: none;
+      }
+    }
+
+    & > a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
